@@ -11,7 +11,7 @@ engine = create_engine('sqlite:///migrations_test.db')
 Base = declarative_base()
 
 class Student(Base):
-    __tablename__ = 'students'
+    __tablename__ = 'scholars'
     __table_args__ = (
         UniqueConstraint('email',
             name='unique_email'),
